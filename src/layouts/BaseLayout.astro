@@ -12,11 +12,11 @@ import Layout from './Layout.astro'
     <Layout>
     <!-- Add other UI components here, like common headers and footers. -->
     <div class="my-5 w-full lg:w-3/5 mx-auto px-12">
-        <h1 class="text-4xl font-bold my-4">{frontmatter.title}</h1>
+        <h1 class="text-5xl lg:text-4xl font-bold my-4">{frontmatter.title}</h1>
         <p class="font-bold text-gray-500">by {frontmatter.author}</p>
         <p class="text-gray-300 italic">Written on: {frontmatter.date}</p>
         <!-- 2. Rendered HTML will be passed into the default slot. -->
-        <div class="text-left my-4 text-lg article">
+        <div class="text-left my-4 text-3xl lg:text-xl article">
             <slot />
         </div>
     </div>
