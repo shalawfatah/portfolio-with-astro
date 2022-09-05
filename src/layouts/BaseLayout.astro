@@ -1,0 +1,31 @@
+---
+// 1. The frontmatter prop gives access to frontmatter and other data
+const { frontmatter } = Astro.props;
+import Layout from './Layout.astro'
+---
+<html>
+  <head>
+    <!-- Add other Head elements here, like styles and meta tags. -->
+    <title>{frontmatter.title}</title>
+  </head>
+  <body>
+    <Layout>
+    <!-- Add other UI components here, like common headers and footers. -->
+    <div class="my-5 lg:w-3/5 md:w-3/5 w-full mx-auto px-10">
+        <h1 class="text-4xl font-bold my-4">{frontmatter.title}</h1>
+        <p class="font-bold text-gray-500">by {frontmatter.author}</p>
+        <p class="text-gray-300 italic">Written on: {frontmatter.date}</p>
+        <!-- 2. Rendered HTML will be passed into the default slot. -->
+        <div class="text-left my-4 text-lg article">
+            <slot />
+        </div>
+    </div>
+    </Layout>
+  </body>
+</html>
+
+<style>
+  .article {
+    line-height: 2.5;
+  }
+</style>

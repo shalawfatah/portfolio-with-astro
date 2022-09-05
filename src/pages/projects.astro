@@ -1,0 +1,40 @@
+---
+import Layout from "../layouts/Layout.astro";
+import {projects} from '../store/projects.astro';
+---
+<Layout>
+	<h1 class="text-4xl font-bold text-center my-4">Sample Projects</h1>
+	<p class="text-black bg-gray-100 rounded w-full lg:w-3/5 md:w-3/5 p-4 subtitle  m-4 mx-auto text-center">
+		This list covers certain tech-stack that I feel comfortable 
+		with, mainly Javascript, React, Jamstack and headless CMS, GIS and Mapping, 
+		Data Visualization, Socket & real-time communication, and some other technologies. 
+	</p>
+	<div class="flex flex-wrap justify-center mx-10 items-stretch">
+	{projects.map(item =>{
+		return <div class="h-auto w-80 mx-4 rounded p-4 shadow-xl flex flex-col justify-between" >
+					<div class="">
+						<h1 class="font-bold text-2xl p-1 text-black">{item.title}</h1>
+						{item.tech_stack.map(x => <p class="inline font-bold text-xs rounded p-1 text-black">{x} |</p>)}
+						</div>
+					<div class="my-3">
+						<p class="p-1 bg-[#FFF/0.5] text-black">{item.description}</p>
+					</div>
+					<div class="flex justify-between">
+						<div class="flex bg-black text-white p-1 rounded items-center px-2 mr-2">
+							<img class="h-6 w-auto rounded-full mx-2"src="https://flyclipart.com/thumb2/github-png-icon-free-download-813498.png" /><a href={item.github} class="text-sm" target="_blank">On Github</a>
+						</div>
+						<div class="flex bg-indigo-500 text-white p-1 rounded items-center px-2 mr-2">
+							<img class="h-6 w-auto rounded-full mx-2"src="https://i.pinimg.com/736x/b5/f8/8e/b5f88eabf60e336f68e693696a115382.jpg" /><a href={item.github} class="text-sm" target="_blank">Live Demo</a>
+						</div>
+					</div>
+				</div>
+
+	})}
+	</div>
+</Layout>
+
+<style>
+	.subtitle {
+		line-height: 2.4;
+	}
+</style>
