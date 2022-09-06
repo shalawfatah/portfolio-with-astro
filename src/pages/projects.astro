@@ -17,14 +17,16 @@ import {projects} from '../store/projects.astro';
 						{item.tech_stack.map(x => <p class="inline font-bold text-xl lg:text-xs rounded p-1 text-black">{x} |</p>)}
 						</div>
 					<div class="my-3">
-						<p class="text-2xl lg:text-lg p-1 bg-[#FFF/0.5] text-black">{item.description}</p>
+						<p class="text-3xl lg:text-lg p-1 bg-[#FFF/0.5] text-black">{item.description}</p>
 					</div>
 					<div class="flex justify-between">
 						<div class="flex bg-black text-white p-1 rounded items-center px-2 mr-2">
-							<img class="h-6 w-auto rounded-full mx-2"src="https://flyclipart.com/thumb2/github-png-icon-free-download-813498.png" /><a href={item.github} class="text-xl lg:text-sm" target="_blank">On Github</a>
+							<img class="h-8 w-auto rounded-full mx-2"src="https://flyclipart.com/thumb2/github-png-icon-free-download-813498.png" />
+							<a href={item.github} class="text-xl lg:text-sm" target="_blank">On Github</a>
 						</div>
 						<div class="flex bg-indigo-500 text-white p-1 rounded items-center px-2 mr-2">
-							<img class="h-8 w-auto rounded-full mx-2"src="https://i.pinimg.com/736x/b5/f8/8e/b5f88eabf60e336f68e693696a115382.jpg" /><a href={item.github} class="text-xl lg:text-sm" target="_blank">Live Demo</a>
+							<img class="h-8 w-auto rounded-full mx-2"src="https://i.pinimg.com/736x/b5/f8/8e/b5f88eabf60e336f68e693696a115382.jpg" />
+							<a href={item.github} class="text-xl lg:text-sm" target="_blank">Live Demo</a>
 						</div>
 					</div>
 				</div>
