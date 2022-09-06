@@ -3,14 +3,14 @@ import Layout from "../layouts/Layout.astro";
 const posts = await Astro.glob('../pages/blogs/*.md');
 ---
 <Layout>
-	<h1 class="text-5xl font-bold text-center">Small blog</h1>
-	<p class="text-md text-gray-600 italic text-center font-bold my-5">A collection of technical articles</p>
+	<h1 class="text-6xl mt-6 font-bold text-center">Small blog</h1>
+	<p class="lg:text-sm text-2xl text-gray-600 italic text-center font-bold my-5 tracking-wider">A collection of technical articles</p>
 
 	<div class="mx-12 p-2 px-8 bg-gray-100 rounded">
 	{posts.map(post => {
 		return <div class="my-8">
-				  <a class="text-4xl lg:text-2xl font-bold hover:text-indigo-500 duration-300" href={post.url}>{post.frontmatter.title}</a>
-				  <p class="italic text-gray-400">{post.frontmatter.date}</p>
+				  <a class="text-5xl lg:text-2xl my-2 font-bold hover:text-indigo-500 duration-300" href={post.url}>{post.frontmatter.title}</a>
+				  <p class="lg:text-sm text-2xl my-2 italic text-gray-400">{post.frontmatter.date}</p>
 			   </div>
 		})}
 	</div>
