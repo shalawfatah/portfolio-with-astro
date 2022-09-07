@@ -1,6 +1,6 @@
 ---
 layout: ../../layouts/BaseLayout.astro
-title: "What makes you a bad developer?"
+title: "What makes you a good developer?"
 author: "Shalaw Fatah"
 date: "Wednesday, 07 September 2022"
 ---
@@ -27,7 +27,8 @@ Initiative is not only verbal, you can do anything that helps, but this also sho
 ## 4. You, the Problem
 You have to know yourself. Everyone in the workplace have certain sides that the others do not like. No matter how much appreciated you are, you do have certain things others do not like. The biggest problem about this issue is that often we love ourselves enough that we overlook our negative aspects. We can't see them at all. 
 ## Solution:
-As you do check-ups on your coworkers, try to do it on your own too. Ask your friends if you have something that they like you to change, and be chill, almost everyone has. This leads to a better environment where you know yourself (at least related to others) better, and you can work on your self-improvement. Remember, some traits you can change and improve, others you can mute in the workplace. Write them down in sticky notes so you can remember every day, it will help you remember, and be humble with your work environment. 
+As you do check-ups on your coworkers, try to do it on your own too. Ask your friends if you have something that they like you to change, and be chill, almost everyone has. This leads to a better environment where you know yourself (at least related to others) better, and you can work on your self-improvement. Remember, some traits you can change and improve, others you can mute in the workplace. Write them down in sticky notes so you can remember every day, it will help you remember, and be humble with your work environment.
+If you can harness these four skills, the ability to code will improve after a while, and you will the rock-star developer that everyone wants, just don't sell yourself cheap. 
 
 
 <style>
