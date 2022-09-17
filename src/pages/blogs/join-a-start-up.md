@@ -1,6 +1,6 @@
 ---
 layout: ../../layouts/BaseLayout.astro
-title: "Join a stat-up, not FAANG"
+title: "Join a start-up, not FAANG"
 author: "Shalaw Fatah"
 date: "Monday, 12 September 2022"
 ---
