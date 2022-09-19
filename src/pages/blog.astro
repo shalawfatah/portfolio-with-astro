@@ -11,12 +11,13 @@ const sorted = posts.sort((a, b) => {
 	<h1 class="text-6xl mt-6 font-bold text-center">Small blog</h1>
 	<p class="lg:text-sm text-2xl text-gray-600 italic text-center font-bold my-5 tracking-wider">A collection of technical articles</p>
 
-	<div class="mx-12 p-2 px-8 bg-gray-100 rounded">
+	<div class="mx-12 p-2 px-8 rounded">
 	{sorted.map(post => {
-		return <div class="my-8 border-b-2 border-dashed border-gray-300">
-				  <a class="text-5xl lg:text-2xl my-2 font-bold hover:text-indigo-500 duration-300" href={post.url}>{post.frontmatter.title}</a>
-				  <p class="lg:text-sm text-2xl my-2 italic text-gray-400">{post.frontmatter.date}</p>
-			   </div>
+		return          <div class="flex flex-col my-8"><a href={post.url} class="text-5xl lg:text-2xl text-gray-900 font-semibold tracking-wide  hover:text-indigo-500 duration-300">{post.frontmatter.title}</a>
+                            <time class="text-xs tracking-wide uppercase text-gray-400">{post.frontmatter.date}</time>
+                            <p class="mt-3 text-gray-600"></p>
+							<div class="h-2 border-b-2 border-dotted border-gray-200"></div>
+						</div>
 		})}
 	</div>
 </Layout>
