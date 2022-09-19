@@ -1,6 +1,6 @@
 ---
 layout: ../../layouts/BaseLayout.astro
-title: "How to Prevent Developer Burnout"
+title: "How to Avoid Burnout"
 author: "Shalaw Fatah"
 date: "Monday, 19 September 2022"
 ---
