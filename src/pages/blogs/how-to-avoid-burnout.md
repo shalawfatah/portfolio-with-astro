@@ -70,7 +70,7 @@ If you jail your digital devices after 11 PM or anytime you want to sleep in an 
         font-weight: 700;
         color: darkviolet;
         display: inline;
-        border-left: 10px solid darkviolet;
+        border-left: 6px solid darkviolet;
         padding: .4rem;
         border-radius: 2px;
     }
