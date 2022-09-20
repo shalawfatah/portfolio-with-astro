@@ -68,20 +68,21 @@ If you jail your digital devices after 11 PM or anytime you want to sleep in an 
     h2 {
         font-size: 22px;
         font-weight: 700;
-        background-color: #0147AB;
-        color: white;
+        color: darkviolet;
         display: inline;
+        border-left: 10px solid darkviolet;
         padding: .4rem;
         border-radius: 2px;
     }
     th {
-        background-color: #0147AB;
+        background-color: darkviolet;
         color: white;
         padding: 4px;
         font-weight: 16px;
     }
-    td {
-                font-weight: 700;
+    td 
+    {
+        font-weight: 700;
     }
     .note {
         color: gray;
