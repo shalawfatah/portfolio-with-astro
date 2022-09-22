@@ -1,11 +1,13 @@
 ---
 // 1. The frontmatter prop gives access to frontmatter and other data
 const { frontmatter } = Astro.props;
-import Layout from './Layout.astro'
+import Layout from './Layout.astro';
+import icon from "../assets/icon.webp";
 ---
 <html>
   <head>
     <!-- Add other Head elements here, like styles and meta tags. -->
+    <link rel="icon" type="image/png" href={icon} />
     <title>{frontmatter.title}</title>
   </head>
   <body>
