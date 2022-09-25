@@ -1,6 +1,6 @@
 ---
 layout: ../../layouts/BaseLayout.astro
-title: "The Best Way To Learn Is Not Personal Projects"
+title: "The best way to learn is not personal projects"
 author: "Shalaw Fatah"
 date: "Sunday, 25 September 2022"
 ---

@@ -1,6 +1,6 @@
 ---
 layout: ../../layouts/BaseLayout.astro
-title: "Non-coding Jobs For Programmers"
+title: "Non-coding jobs for programmers"
 author: "Shalaw Fatah"
 date: "Tuesday, 20 September 2022"
 ---

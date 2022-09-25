@@ -1,6 +1,6 @@
 ---
 layout: ../../layouts/BaseLayout.astro
-title: "Is Tech-Sector Broken?"
+title: "Is Tech-sector broken?"
 author: "Shalaw Fatah"
 date: "Monday, 05 September 2022"
 ---
