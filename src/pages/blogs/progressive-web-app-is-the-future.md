@@ -8,7 +8,8 @@ date: "Friday, 30 September 2022"
 I'll list why I see this tech as the future of only web, but smartphone, TV, and all other devices. </p>
 
 ## PWA is full-featured
-Almost anything you can do with your native smartphone app, you can do with your PWA. There are still a couple of features that are not supported on iOS, but they have already been listed to be supported in the future. All features that you see native to smartphone apps, will soon be supported for PWA, even for other devices. 
+Almost anything you can do with your native smartphone app, you can do with your PWA. There are still a couple of features that are not supported on iOS, but they have already been listed to be supported in the future. All features that you see native to smartphone apps, will soon be supported for PWA, even for other devices.
+In terms of performance, sooner or later, web apps will be as fast if not faster as native mobile apps.
 
 ## PWA makes developers powerful
 Up to this moment, it's difficult for developers to build anything other than their specialty. If you are a web developer, you can really only be a good web developer, same is true for app developers. This extends to android, ios, and other fields. Basically, there are thousands of fields and you have to pick one.
@@ -33,7 +34,11 @@ PWA can be extended into other devices, like TV, smart watches, tablets, etc. Th
 
 ## Avoid corporate capture
 With PWA, you do not need App Store, or Google Play conditions. You can avoid all that by hosting it on your website. In fact, if we could all create an open source shop for PWAs, with the guarantee that it will not be abused to get money from people and businesses, it will soon be larger than both those two platforms. 
-... this article will continue
+
+## PWA is becoming popular
+Developers pushed Apple to support Web Push Notifications for two years, until Apple announced its support for Desktop this year (2022) and for mobile, next year (2023). This makes PWA to support all major features available for native apps. 
+PWA has already been used by major companies like Twitter, Uber, Alibaba, AliExpress, Forbes and many more. It's getting noticed in all manners and will be used even more. 
+The future seems to be for PWAs as with the least amount of effort, you can offer an enormous services in the form of a platform-agnostic app.
 
 
 <style>
