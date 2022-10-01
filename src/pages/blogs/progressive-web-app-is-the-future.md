@@ -39,7 +39,7 @@ With PWA, you do not need App Store, or Google Play conditions. You can avoid al
 Developers pushed Apple to support Web Push Notifications for two years, until Apple announced its support for Desktop this year (2022) and for mobile, next year (2023). This makes PWA to support all major features available for native apps. 
 PWA has already been used by major companies like Twitter, Uber, Alibaba, AliExpress, Forbes and many more. It's getting noticed in all manners and will be used even more. 
 The future seems to be for PWAs as with the least amount of effort, you can offer an enormous services in the form of a platform-agnostic app.
-If you want to know which features are supported by PWAs and what can they do, check this <a href="https://whatpwacando.today/" target="_blank">website</a>. 
+If you want to know which features are supported by PWAs and what can they do, check this <a class="font-bold text-[#FA8072] hover:text-[#EE6354] hover-underline duration-500" href="https://whatpwacando.today/" target="_blank">website</a>. 
 
 <style>
     h2 {
