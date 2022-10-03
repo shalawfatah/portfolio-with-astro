@@ -1,16 +1,17 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import {projects} from '../store/projects.astro';
+const featured_projects = projects.filter(project => project.featured === true)
+const regular_projects = projects.filter(project => project.featured !== true)
 ---
+
 <Layout>
-	<h1 class="text-6xl lg:text-4xl font-bold text-center my-6">Sample Projects</h1>
+	<h1 class="text-6xl lg:text-4xl font-bold text-center my-6">Featured Projects</h1>
 	<p class="text-3xl lg:text-lg text-black bg-gray-100 rounded w-full lg:w-3/5 p-4 subtitle mx-auto text-center">
-		This list covers certain tech-stack that I feel comfortable 
-		with, mainly Javascript, React, Jamstack and headless CMS, GIS and Mapping, 
-		Data Visualization, Socket & real-time communication, and some other technologies. 
+		This list is to show my expertise in React and Javacript, using APIs like REST and GraphQL. 
 	</p>
 	<div class="flex flex-wrap justify-center mx-10 items-stretch">
-	{projects.map(item => {
+	{featured_projects.map(item => {
 		return <div class="flex justify-center m-6">
 			<div class="block rounded-lg shadow-lg bg-white max-w-sm text-center">
 				<div class="py-3 px-6 border-b border-gray-300 inline font-bold text-xl lg:text-xs rounded p-1 text-black">
@@ -33,12 +34,48 @@ import {projects} from '../store/projects.astro';
 					</div>
 				</div> 
 				</div>
+
 				<div class="py-3 px-6 border-t border-gray-300 text-gray-600">
 				Tech Field: {item.field}
 				</div>
 			</div>
 			</div>
+	})}
+	</div>
+	<h1 class="text-6xl lg:text-4xl font-bold text-center my-6">Regular Projects</h1>
+	<p class="text-3xl lg:text-lg text-black bg-gray-100 rounded w-full lg:w-3/5 p-4 subtitle mx-auto text-center">
+		Back when I started learning web development, I created some projects to show people. Here is the list.
+	</p>
+	<div class="flex flex-wrap justify-center mx-10 items-stretch">
+	{regular_projects.map(item => {
+		return <div class="flex justify-center m-6">
+			<div class="block rounded-lg shadow-lg bg-white max-w-sm text-center">
+				<div class="py-3 px-6 border-b border-gray-300 inline font-bold text-xl lg:text-xs rounded p-1 text-black">
+					{item.tech_stack.map(x => <p class="inline font-bold text-xl lg:text-xs rounded p-1 text-black">{x} |</p>)}
+				</div>
+				<div class="p-6">
+				<h5 class="text-gray-900 text-xl font-medium mb-2">{item.title}</h5>
+				<p class="text-gray-700 text-base mb-4">
+					{item.description}
+				</p>
+				{/* <button type="button" class=" inline-block px-6 py-2.5 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out">Button</button> */}
+				<div class="flex justify-between">
+					<div class="flex p-1 rounded items-center px-2 mr-2 hover:shadow-lg duration-300">
+						<img class="h-8 w-auto rounded-full mx-2"src="https://flyclipart.com/thumb2/github-png-icon-free-download-813498.png" />
+						<a href={item.github} class="text-xl lg:text-sm" target="_blank">On Github</a>
+					</div>
+					<div class="flex p-1 rounded items-center px-2 mr-2 hover:shadow-lg duration-300">
+						<img class="h-8 w-auto rounded-full mx-2"src="https://w7.pngwing.com/pngs/827/941/png-transparent-web-development-web-design-logo-website-arrow-and-globe-logo-search-engine-optimization-text-trademark.png" />
+						<a href={item.live} class="text-xl lg:text-sm" target="_blank">Live Demo</a>
+					</div>
+				</div> 
+				</div>
 
+				<div class="py-3 px-6 border-t border-gray-300 text-gray-600">
+				Tech Field: {item.field}
+				</div>
+			</div>
+			</div>
 	})}
 	</div>
 </Layout>
