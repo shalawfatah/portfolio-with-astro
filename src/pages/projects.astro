@@ -6,14 +6,14 @@ const regular_projects = projects.filter(project => project.featured !== true)
 ---
 
 <Layout>
-	<h1 class="text-6xl lg:text-4xl font-bold text-center my-6">Featured Projects</h1>
-	<p class="text-3xl lg:text-lg text-black bg-gray-100 rounded w-full lg:w-3/5 p-4 subtitle mx-auto text-center">
+	<h1 class="text-4xl lg:text-4xl font-bold text-center my-6">Featured Projects</h1>
+	<p class="text-xl lg:text-lg text-black bg-gray-100 rounded w-full lg:w-3/5 p-4 subtitle mx-auto text-center">
 		This list is to show my expertise in React and Javacript, using APIs like REST and GraphQL. 
 	</p>
 	<div class="flex flex-wrap justify-center mx-10 items-stretch">
 	{featured_projects.map(item => {
 		return <div class="flex justify-center m-6">
-			<div class="block rounded-lg shadow-lg bg-white max-w-sm text-center">
+			<div class="rounded-lg shadow-lg shadow-gray-500 max-w-md bg-white text-center">
 				<div class="py-3 px-6 border-b border-gray-300 inline font-bold text-xl lg:text-xs rounded p-1 text-black">
 					{item.tech_stack.map(x => <p class="inline font-bold text-xl lg:text-xs rounded p-1 text-black">{x} |</p>)}
 				</div>
@@ -42,14 +42,14 @@ const regular_projects = projects.filter(project => project.featured !== true)
 			</div>
 	})}
 	</div>
-	<h1 class="text-6xl lg:text-4xl font-bold text-center my-6">Regular Projects</h1>
-	<p class="text-3xl lg:text-lg text-black bg-gray-100 rounded w-full lg:w-3/5 p-4 subtitle mx-auto text-center">
+	<h1 class="text-4xl lg:text-4xl font-bold text-center my-6">Regular Projects</h1>
+	<p class="text-xl lg:text-lg text-black bg-gray-100 rounded w-full lg:w-3/5 p-4 subtitle mx-auto text-center">
 		Back when I started learning web development, I created some projects to show people. Here is the list.
 	</p>
 	<div class="flex flex-wrap justify-center mx-10 items-stretch">
 	{regular_projects.map(item => {
 		return <div class="flex justify-center m-6">
-			<div class="block rounded-lg shadow-lg bg-white max-w-sm text-center">
+			<div class="shadow-lg shadow-gray-500 max-w-md rounded-lg bg-white text-center">
 				<div class="py-3 px-6 border-b border-gray-300 inline font-bold text-xl lg:text-xs rounded p-1 text-black">
 					{item.tech_stack.map(x => <p class="inline font-bold text-xl lg:text-xs rounded p-1 text-black">{x} |</p>)}
 				</div>
