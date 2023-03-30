@@ -5,7 +5,7 @@ author: "Shalaw Fatah"
 date: "Tuesday, 28 September 2022"
 ---
  
-<p class="first-letter:text-4xl first-letter:font-bold first-letter:text-[#ADD8E6]">We usually list a bunch of skills which we don’t have on our resumes. For good reason: companies list absurd amounts of skills that we do not have altogether. That does not matter. What matters is to know enough about the core skills that get you through.
+<p class="first-letter:text-4xl first-letter:font-bold first-letter:text-[#ADD8E6]">We usually list a bunch of skills which we don’t have on our resumees. For good reason: companies list absurd amounts of skills that we do not have altogether. That does not matter. What matters is to know enough about the core skills that get you through.
 It’s not easy to determine whether you know something or not, especially in programming. The ultimate test of knowing something is to build something real.</p>
 
 <div class="max-w-4xl my-4 p-4 text-black bg-[#ADD8E6] shadow">
